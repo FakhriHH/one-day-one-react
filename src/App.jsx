@@ -9,6 +9,7 @@ import Day05Reusable from './pages/Day05Reusable';
 import Day06Tailwind from './pages/Day06Tailwind';
 import Day07Todo from './pages/Day07Todo';
 import Day08Router from './pages/Day08Router';
+import Day09LocalStorage from './pages/Day09LocalStorage';
 
 const App = () => {
   return (
@@ -21,15 +22,17 @@ const App = () => {
           <Link to="/day05">Day 5</Link>
           <Link to="/day06">Day 6</Link>
           <Link to="/day07">Day 7</Link>
+          <Link to="/day09">Day 9</Link>
         </nav>
 
         <Routes>
           <Route path="/" element={<Day08Router />} />
-          <Route path="day03" element={<Day03State />} />
-          <Route path="day04" element={<Day04Conditional />} />
-          <Route path="day05" element={<Day05Reusable />} />
-          <Route path="day06" element={<Day06Tailwind />} />
+          <Route path="/day03" element={<Day03State />} />
+          <Route path="/day04" element={<Day04Conditional />} />
+          <Route path="/day05" element={<Day05Reusable />} />
+          <Route path="/day06" element={<Day06Tailwind />} />
           <Route path="day07" element={<Day07Todo />} />
+          <Route path="/day09" element={<Day09LocalStorage />} />
         </Routes>
       </div>
     </BrowserRouter>
