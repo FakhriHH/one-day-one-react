@@ -12,6 +12,7 @@ import Day08Router from './pages/Day08Router';
 import Day09LocalStorage from './pages/Day09LocalStorage';
 import Day10Form from './pages/Day10Form';
 import Day11FormResuable from './pages/Day11FormReusable';
+import Day12StateLifting from './pages/Day12StateLifting';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Link to="/day09">Day 9</Link>
           <Link to="/day10">Day 10</Link>
           <Link to="/day11">Day 11</Link>
+          <Link to="/day12">Day 12</Link>
         </nav>
 
         <Routes>
@@ -39,6 +41,7 @@ const App = () => {
           <Route path="/day09" element={<Day09LocalStorage />} />
           <Route path="/day10" element={<Day10Form />} />
           <Route path="/day11" element={<Day11FormResuable />} />
+          <Route path="/day12" element={<Day12StateLifting />} />
         </Routes>
       </div>
     </BrowserRouter>
