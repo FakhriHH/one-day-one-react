@@ -13,6 +13,7 @@ import Day09LocalStorage from './pages/Day09LocalStorage';
 import Day10Form from './pages/Day10Form';
 import Day11FormResuable from './pages/Day11FormReusable';
 import Day12StateLifting from './pages/Day12StateLifting';
+import Day13CommentCrud from './pages/Day13CommentCrud';
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Link to="/day10">Day 10</Link>
           <Link to="/day11">Day 11</Link>
           <Link to="/day12">Day 12</Link>
+          <Link to="/day13">Day 13</Link>
         </nav>
 
         <Routes>
@@ -42,6 +44,7 @@ const App = () => {
           <Route path="/day10" element={<Day10Form />} />
           <Route path="/day11" element={<Day11FormResuable />} />
           <Route path="/day12" element={<Day12StateLifting />} />
+          <Route path="/day13" element={<Day13CommentCrud />} />
         </Routes>
       </div>
     </BrowserRouter>
